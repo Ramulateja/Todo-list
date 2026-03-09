@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODOAPP</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen flex justify-center items-start bg-gray-300 px-4 py-10">
+  <div class="w-full max-w-md space-y-6">
+    
+    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg space-y-4">
+      <h1 class="text-xl sm:text-2xl font-bold text-center text-white bg-black p-3 hover:bg-gray-200 hover:text-blue-500 hover:drop-shadow-lg transition">TODO LIST</h1>
+      <input id="title"type="text"placeholder="Add a task"class="w-full border p-3 rounded hover:bg-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-gray-200 active:bg-gray-200"/>
+      <textarea id="description"placeholder="Enter the above task description"class="w-full border p-3 rounded h-24 hover:bg-gray-300 focus:outline-4 focus:outline-offset-2 focus:outline-gray-300 active:bg-gray-300"></textarea>
+      <button id="addbtn"class="w-full bg-blue-800 text-white p-3 rounded hover:bg-blue-600">Add Task</button>
+    </div>
+    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+      <h2 class="text-lg font-semibold mb-4">Tasks</h2>
+      <ul id="taskList" class="space-y-3"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
